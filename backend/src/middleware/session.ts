@@ -4,6 +4,8 @@ import { auth } from "../lib/auth.js";
 import { prisma } from "../lib/prisma.js";
 
 export const sessionMiddleware = createMiddleware(async (c, next) => {
+    console.log("Cookie header:", c.req.header("cookie"));
+
     const session = await auth.api.getSession({
         headers: c.req.raw.headers,
     });
