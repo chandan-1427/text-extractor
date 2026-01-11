@@ -8,7 +8,7 @@ import { txRouter } from "./routes/transactions.routes.js";
 
 const CLIENT_ORIGIN = process.env.BASE_URL_CLIENT
   ? new URL(process.env.BASE_URL_CLIENT).origin
-  : "http://localhost:3001";
+  : "https://vessify-six.vercel.app";
 
 export const app = new Hono();
 
