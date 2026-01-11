@@ -1,7 +1,7 @@
 // src/middleware/session.ts
 import { createMiddleware } from "hono/factory";
 import { auth } from "../lib/auth";
-import { prisma } from "../../lib/prisma";
+import { prisma } from "../lib/prisma";
 
 export const sessionMiddleware = createMiddleware(async (c, next) => {
     const session = await auth.api.getSession({

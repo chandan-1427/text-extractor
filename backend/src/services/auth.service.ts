@@ -1,5 +1,5 @@
 import { auth } from "../lib/auth";
-import { prisma } from "../../lib/prisma";
+import { prisma } from "../lib/prisma";
 import type { RegisterInput, LoginInput } from "../types/auth.types";
 
 export async function registerAndLoginUser(input: RegisterInput) {

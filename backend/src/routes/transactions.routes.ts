@@ -5,7 +5,7 @@ import {
   extractTransaction,
   saveTransaction,
 } from "../services/transaction.service";
-import { prisma } from "../../lib/prisma";
+import { prisma } from "../lib/prisma";
 import {
   extractTransactionSchema,
   saveTransactionSchema,
