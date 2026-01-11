@@ -18,6 +18,13 @@ export const auth = betterAuth({
     session: {
         strategy: "jwt", // This tells the core to use JWT
         expiresIn: 60 * 60 * 24 * 7, 
+        cookie: {
+            name: "vessify_session",
+            httpOnly: true,
+            secure: true,        // REQUIRED on https
+            sameSite: "none",    // REQUIRED for cross-origin
+            path: "/",
+        },
     },
     rateLimit: {
         enabled: true,
