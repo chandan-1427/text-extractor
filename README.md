@@ -3,6 +3,7 @@
 Convert raw bank SMS and financial statements into structured data instantly. Secure, multi-currency, and built for modern teams.
 
 > **Status**: Development | **Version**: 0.1.0
+> **Live link**: https://vessify-six.vercel.app
 
 ---
 
